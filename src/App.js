@@ -9,7 +9,7 @@ function App() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:8080/todos")
+    fetch("http://150.240.167.144//todos")
       .then((res) => {
         if (!res.ok) throw new Error("Failed to fetch todos");
         return res.json();
